@@ -1,0 +1,95 @@
+/*Importing a seperate font: */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Designing the top nav: */
+
+.topnav{
+    /*Setting the display type*/
+    display:flex;
+    /*Font Family*/
+    font-family: 'PT Sans Narrow', sans-serif;
+    /* Setting the min and max height nd width: */
+    max-width: 100%;
+    min-height: 40px;
+    min-width: 590px;
+    max-height: 180px;
+    /*Centering divs in the topnav*/
+    justify-content: center;
+    /*Adding a colour to the div: */
+    background-color: red;
+}
+
+.topnav div.tab{
+    display: block;
+    /*Min and max width and height of each div*/
+    max-width: 200px;
+    min-width: 70px;
+    min-height: 40px;
+    max-height: 180px;
+    /*Typography*/
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    /*Padding*/
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+    /*Position*/
+    position: sticky;
+    top: 0px;
+}
+
+/*Designing the link text: */
+.topnav div.tab a{
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    color: white;
+}
+
+/*client interaction*/
+.topnav div.tab:hover, a:hover{
+    background: rgb(255, 77, 77);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+/*Working on the title: */
+
+.Title {
+    margin-top: 40px;
+    margin-left: 25px;
+    --bigFontSize: 60px;
+    --smolFontSize: 53px;
+}
+
+.Title span.big {
+    font-size: var(--smolFontSize);
+}
+
+.Title span.smol{
+    font-size: var(--bigFontSize);
+}
+.Title span.smol:hover{
+    color: red;
+}
+
+.Title span.big:hover{
+    color: green;
+}
+
+/*Designing the content*/
